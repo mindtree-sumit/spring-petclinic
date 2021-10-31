@@ -7,7 +7,7 @@ pipleline {
             }
         }
         stage ('Build') {
-            step {
+            stepa {
                 bat 'mvn clean package'
                 junit '**/target/surefire-reports/Test-*.xml'
             }
