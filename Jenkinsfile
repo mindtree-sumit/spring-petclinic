@@ -1,9 +1,9 @@
 pipleline {
-    agent { docker 'maven:3.5-alpine'}
+    agent any
     stages {
         stage ('Checkout') {
             steps {
-                git 'https://github.com/spring-projects/spring-petclinic.git'
+                git 'https://github.com/mindtree-sumit/spring-petclinic.git'
             }
         }
         stage ('Build') {
